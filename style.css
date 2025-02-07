@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 20px;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
     border-radius: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1.5s ease-in-out;
+    max-width: 90%;
 }
 
 h1 {
@@ -25,7 +27,8 @@ h1 {
 }
 
 .proposal-img {
-    width: 250px;
+    width: 70%;
+    max-width: 250px;
     height: auto;
     margin-top: 10px;
 }
@@ -33,6 +36,9 @@ h1 {
 .buttons {
     margin-top: 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -75,4 +81,26 @@ h1 {
 
 .shake {
     animation: shake 0.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+.yes-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff4d4d;
 }
